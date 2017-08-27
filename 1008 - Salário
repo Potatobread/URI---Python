@@ -1,0 +1,7 @@
+func = input()
+hor = input()
+val = float(input())
+
+salar = hor * val
+print('NUMBER = %d' %func)
+print('SALARY = U$ %.2f' %salar)
