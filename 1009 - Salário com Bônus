@@ -1,0 +1,7 @@
+nome = raw_input()
+sal = float(input())
+vend = float(input())
+
+vend = vend * 0.15
+total = sal + vend
+print('TOTAL = R$ %.2f' %total)
