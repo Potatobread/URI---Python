@@ -1,0 +1,7 @@
+val = raw_input().split(" ")
+
+a, b, c = val
+
+maior1 = (int(a)+int(b)+abs(int(a)-int(b)))/2
+maior2 = (maior1+int(c)+abs(maior1-int(c)))/2
+print('%d eh o maior' %maior2)
