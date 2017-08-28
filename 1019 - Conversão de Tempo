@@ -1,0 +1,9 @@
+valor = input()
+
+h = valor / 3600
+valor = valor % 3600
+m = valor / 60
+valor = valor % 60
+s = valor
+
+print('%d:%d:%d' %(h,m,s))
