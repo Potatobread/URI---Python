@@ -1,0 +1,5 @@
+tp = input()
+vel = input()
+
+total = (vel/12.0)*tp
+print('%.3f' %total)
