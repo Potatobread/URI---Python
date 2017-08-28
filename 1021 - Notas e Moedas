@@ -1,1 +1,42 @@
+valor = float(input())
 
+a = valor/100
+valor = valor % 100
+b = valor/50
+valor = valor % 50
+c = valor/20
+valor = valor % 20
+d = valor/10
+valor = valor % 10
+e = valor/5
+valor = valor % 5
+f = valor/2
+valor = valor % 2
+
+valor = valor * 100
+g = valor/100
+valor = valor % 100
+h = valor/50
+valor = valor % 50
+i = valor/25
+valor = valor % 25
+j = valor/10
+valor = valor % 10
+k = valor/5
+valor = valor % 5
+
+
+print('NOTAS:')
+print('%d nota(s) de R$ 100.00' %a)
+print('%d nota(s) de R$ 50.00' %b)
+print('%d nota(s) de R$ 20.00' %c)
+print('%d nota(s) de R$ 10.00' %d)
+print('%d nota(s) de R$ 5.00' %e)
+print('%d nota(s) de R$ 2.00' %f)
+print('MOEDAS:')
+print('%d moeda(s) de R$ 1.00' %g)
+print('%d moeda(s) de R$ 0.50' %h)
+print('%d moeda(s) de R$ 0.25' %i)
+print('%d moeda(s) de R$ 0.10' %j)
+print('%d moeda(s) de R$ 0.05' %k)
+print('%d moeda(s) de R$ 0.01' %valor)
