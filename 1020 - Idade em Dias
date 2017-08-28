@@ -1,0 +1,11 @@
+valor = input()
+
+a = valor / 365
+valor = valor % 365
+m = valor / 30
+valor = valor % 30
+d = valor
+
+print('%d ano(s)' %a)
+print('%d mes(es)' %m)
+print('%d dia(s)' %d)
