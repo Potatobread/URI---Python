@@ -1,0 +1,4 @@
+km = input()
+
+total = km * 2
+print('%d minutos' %total)
