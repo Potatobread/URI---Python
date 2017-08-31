@@ -1,0 +1,48 @@
+valor = raw_input().split(" ")
+
+x, y, z = valor
+x = float(x)
+y = float(y)
+z = float(z)
+
+if(x >= y and x >= z and y >= z):
+  a = x
+  b = y
+  c = z
+elif(x >= y and x >= z and z >= y):
+  a = x
+  b = z
+  c = y
+elif(y >= x and y >= z and x >= z):
+  a = y
+  b = x
+  c = z
+elif(y >= x and y >= z and z >= x):
+  a = y
+  b = z
+  c = x
+elif(z >= x and z >= y and x >= y):
+  a = z
+  b = x
+  c = y
+elif(z >= x and z >= y and y >= x):
+  a = z
+  b = y
+  c = x
+  
+if(a >= b + c):
+  print('NAO FORMA TRIANGULO')
+elif((a*a) == (b*b)+(c*c)):
+  print('TRIANGULO RETANGULO')
+elif((a*a) > (b*b)+(c*c)):
+  print('TRIANGULO OBTUSANGULO')
+  if(a == b and a == c):
+    print('TRIANGULO EQUILATERO')
+  elif(a == b or a == c or b == c):
+    print('TRIANGULO ISOSCELES')
+elif((a*a) < (b*b)+(c*c)):
+  print('TRIANGULO ACUTANGULO')
+  if(a == b and a == c):
+    print('TRIANGULO EQUILATERO')
+  elif(a == b or a == c or b == c):
+    print('TRIANGULO ISOSCELES')
