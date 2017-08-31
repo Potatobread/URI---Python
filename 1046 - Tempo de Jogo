@@ -1,0 +1,15 @@
+valor = raw_input().split(" ")
+
+ini, fin = valor
+ini = int(ini)
+fin = int(fin)
+
+if(ini == 0 and fin == 0):
+  cal = 24;
+elif(ini > 12):
+  aux = 24 - ini
+  cal = aux + fin
+else:
+  cal = fin - ini
+print('O JOGO DUROU %d HORA(S)' %cal)
+  
