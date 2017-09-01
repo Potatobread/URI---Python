@@ -1,0 +1,25 @@
+valor = raw_input().split(" ")
+
+hi, mi, hf, mf = valor
+hi = int(hi)
+mi = int(mi)
+hf = int(hf)
+mf = int(mf)
+
+if(hi > hf):
+    h = 24 - hi
+    h = h + hf
+else:
+    h = hf - hi
+
+if(mi > mf):
+    m = 60 - mi
+    m = m + mf
+    h -= 1
+else:
+    m = mf - mi
+
+if(hi == hf and mi == mf):
+    print('O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)')
+else:
+    print('O JOGO DUROU %d HORA(S) E %d MINUTO(S)' %(h,m))
